@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Question_2</title>
+</head>
+<body>
+<form>
+<table>
+<tr>
+<th colspan="2">Pizza Shop 2.0</th>
+</tr>
+<tr>
+<td>Name</td>
+<td><input type="text" placeholder="Enter Name"></td>
+</tr>
+<tr>
+<td>Pizza Topping</td>
+<td><input type="radio" name="top">Supreme<br>
+<input type="radio" name="top">Vegetarian<br>
+<input type="radio" name="top">Hawaiian
+
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

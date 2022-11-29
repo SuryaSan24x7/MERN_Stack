@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <script type="text/javascript">
+        /*num="1,2,3,4,5,6,7,8,9"
+Note:Use num string in below questions:
+1.Print only numbers not comma in seperate line
+2.Print all even numbers
+3.Fetch "1" and "5" from string and perform numerical addition
+4.Fetch "2" and "8" from string and perfrom numerical muliplication*/
+        var num = "1,2,3,4,5,6,7,8,9";
+        var a = num.split(",");
+        function B1(a) {
+
+            for (var r = 0; r < a.length; r++) {
+                console.log(a[r]);
+                document.write(a[r] + "<br>");
+            }
+        }
+        function even(a) {
+            document.write("<br>list of even numbers : <br>")
+            for (var e = 0; e < a.length; e++) {
+                if (a[e] % 2 == 0) {
+                    console.log(a[e]);
+                    document.write(a[e] + "<br>");
+                }
+            }
+        }
+        function add(num) {
+            document.write(" adding 1 and  5 from array<br>");
+            var sum = parseInt(num[0]) + parseInt(num[8]);
+            console.log(sum);
+            document.write(sum + "<br>");
+        }
+        function mul(num) {
+            document.write(" multiplying 2 and  8 from array<br>");
+            var mul = parseInt(num[2]) * parseInt(num[14]);
+            console.log(mul);
+            document.write(mul + "<br>");
+        }
+
+        B1(a);
+        even(a);
+        add(num);
+        mul(num);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

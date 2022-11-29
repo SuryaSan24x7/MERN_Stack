@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Function</title>
+	<script type="text/javascript">
+			
+			//named function
+			// function add(a,b){
+			// 	return a + b
+			// }
+
+			// var add = function(a,b){
+			// 	return a + b
+			// }
+
+			var add = (a,b) => {
+				return a + b
+			}
+			add()			
+
+			//Anonymous function:function with name
+			//can be used as callback or function as argument
+			function(a,b){
+				return a + b
+			}
+
+			//Arrow functions
+			//can be used as callback or function as argument
+			//Avoid inside object
+			(a,b)=>{
+				return a + b
+			}
+			
+			// var sqr = a =>{
+			// 	return a * a
+			// }
+			var sqr = a => a * a
+			
+
+			sqr(10)
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

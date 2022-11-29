@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var name="Tommy"
+console.log(name)
+document.write(name)
+</script>
+</head>
+<body>
+
+</body>
+</html>

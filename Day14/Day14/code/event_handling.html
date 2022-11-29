@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Event Handling</title>
+	<style type="text/css">
+		.block{
+			height: 100px;
+			width : 100px;
+			border: 1px solid black;
+		}
+	</style>
+	<script type="text/javascript">
+		
+		function func1(){
+			// document.getElementById("block").innerHTML = "Hi"
+			document.getElementsByClassName("block")[0].innerHTML = "Hi" //[{}]
+		}
+
+		function func2(){
+			document.getElementById("block").style["background-color"] = "red"
+			document.getElementById("block").style["color"] = "white"
+		}
+
+		function func4(){
+			document.getElementById("name").style["padding"] = "1rem"
+		}
+
+		function func5(){
+			document.getElementById("name").style["padding"] = "0.3rem"	
+			var name = document.getElementById("name").value
+			if(name.length < 5){
+				alert("Length must be greater than 5")
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<div id="block" class="block" onclick="func1()" onmouseover="func2()">
+	</div>
+
+	<input type="text" id="name" placeholder="Enter name" onfocus="func4()" onblur ="func5()">
+	<input type="text" id="email" placeholder="Enter name">
+
+	<script type="text/javascript">
+		// document.getElementById("block").innerHTML = "Hi Sid!"
+		function func3(){
+			document.getElementById("block").innerHTML = "Mouse left"
+		}
+		document.getElementById("block").addEventListener("mouseleave",func3)
+
+		document.getElementById("block").addEventListener("mouseenter",function(){
+			console.log("Hi");
+		})
+
+	</script>
+</body>
+</html>

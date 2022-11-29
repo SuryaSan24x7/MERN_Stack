@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <script type="text/javascript">
+        //1.Write a program to check given string ends with "t" or not
+        var str = prompt("Enter any string ");
+        function A1(str) {
+            console.log(str.endsWith("t"))
+            document.write(str + " Ends in t : " + str.endsWith("t") + "<br>");
+        }
+
+
+        //2.Write a code to accept name of Friends name from user and show in list
+
+        var arr = [];
+        var n = prompt("Enter number of friends")
+
+        function A2(n) {
+            document.write(" Friend List :");
+            for (var z = 0; z < n; z++) {
+                arr.push(prompt("Enter Name"));
+            }
+            var fstr = "<ol>"
+            for (var i = 0; i < arr.length; i++) {
+                fstr = fstr + "<li>" + arr[i] + "</li>"
+            }
+            fstr = fstr + "</ol>";
+            console.log(fstr);
+            document.write(fstr);
+            document.write("<br>");
+        }
+        A1(str);
+        A2(n);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

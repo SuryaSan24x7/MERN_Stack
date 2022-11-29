@@ -1,0 +1,4 @@
+1.Create a employee registration page.Take data from user and show in table
+Details:
+EmpName, email, gender ,state, phone, Data of birth, Languages
+

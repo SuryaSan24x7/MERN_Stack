@@ -1,0 +1,18 @@
+Languages:
+Frontend:
+HTML
+CSS(Bootstrap)
+JS(React)
+
+Backend:
+Nodejs(Express)
+(mongoose)
+
+Database:
+Mongodb
+
+MERN Stack:
+Mongodb, Express,React,Nodejs
+
+MEAN Stack
+Mongodb, Express,Angular,Nodejs

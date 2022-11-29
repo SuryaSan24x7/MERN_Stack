@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><TITLE>QUESTION_5</TITLE></HEAD>
+<BODY>
+<h2>Rob Walker</h2>
+<hr>
+Professional Summary:
+<p>I am a freelancer</p>
+<hr>
+Qualifications:
+<table>
+  <tr>
+      <th>Sr No.</th>
+      <th>Degree</th>
+      <th>Institute</th>
+	<th>Marks</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>B.E.</td>
+    <td>SPPU</td>
+	<td>90%</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>M.E.</td>
+    <td>SPPU</td>
+	<td>80%</td>
+  </tr>
+</table>
+</BODY>
+</HTML>
+ 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <script type="text/javascript">
+        //1.Write a program to check given string ends with "t" or not
+
+        var str = prompt("Enter any string ");
+        console.log(str.endsWith("t"))
+        document.write(str + " Ends in t : " + str.endsWith("t") + "<br>");
+
+        //2.Write a code to accept name of Friends name from user and show in list
+
+        var arr = [];
+        var n = prompt("Enter number of friends")
+        document.write(" Friend List :");
+        for (var z = 0; z < n; z++) {
+            arr.push(prompt("Enter Name"));
+        }
+        var fstr = "<ol>"
+        for (var i = 0; i < arr.length; i++) {
+            fstr = fstr + "<li>" + arr[i] + "</li>"
+        }
+        fstr = fstr + "</ol>";
+        console.log(fstr);
+        document.write(fstr);
+        document.write("<br>");
+        /*num="1,2,3,4,5,6,7,8,9"
+Note:Use num string in below questions:
+1.Print only numbers not comma in seperate line
+2.Print all even numbers
+3.Fetch "1" and "5" from string and perform numerical addition
+4.Fetch "2" and "8" from string and perfrom numerical muliplication*/
+        var num = "1,2,3,4,5,6,7,8,9";
+        var a = num.split(",");
+        for (var r = 0; r < a.length; r++) {
+            console.log(a[r]);
+            document.write(a[r] + "<br>");
+        }
+        document.write("<br>list of even numbers : <br>")
+        for (var e = 0; e < a.length; e++) {
+            if (a[e] % 2 == 0) {
+                console.log(a[e]);
+                document.write(a[e] + "<br>");
+            }
+        }
+        document.write(" adding 1 and  5 from array<br>");
+        var sum = parseInt(num[0]) + parseInt(num[8]);
+        console.log(sum);
+        document.write(sum + "<br>");
+        document.write(" multiplying 2 and  8 from array<br>");
+        var mul = parseInt(num[2]) * parseInt(num[14]);
+        console.log(mul);
+        document.write(mul + "<br>");
+        /*
+        1.Write a code to print fibonnaci series( 1,1,2,3,5,8,13,21...) till 100.
+        2.Write a code to check the given string is palindrome or not. (abba)
+        3.Write a code to take string input from user and remove duplicate words.
+        4.Write a code which accepts a sequence of comma seperated five numbers and find the addition of all of them
+        */
+        document.write(" <br>Fibonnaci Series<br>");
+        var a = 0, b = 1, next;
+        for (var i = 1; i <= 15; i++) {
+            if (a >= 100) {
+                break;
+            }
+            else {
+                console.log(a);
+                document.write(a + " ");
+                next = a + b;
+                a = b;
+                b = next;
+            }
+
+        }
+        document.write("<br>");
+        document.write(" <br>palindrome or not<br>");
+        var pal = prompt("Enter String for palindrome :");
+        var k = pal.split("");
+        var re = k.reverse();
+
+        if (k.toString == re.toString) {
+            document.write("This is a palindrome :" + pal);
+        }
+        else {
+            document.write("This is not palindrome");
+        }
+
+        document.write(" <br>string input from user and remove duplicate words<br>");
+        var input = prompt("enter a string ");
+        var ai = input.split(" ");
+        var y = [];
+        for (var t = 0; t < ai.length; t++) {
+            var flag = 0;
+            for (var tt = t + 1; tt < (ai.length); tt++) {
+                if (ai[t] == ai[tt]) {
+                    flag = 1;
+                }
+            }
+            if (flag == 0) { y.push(ai[t]) }
+        }
+
+        fstring = prompt("enter a sequence of comma seperated five numbers");
+        var fsum = 0;
+        for (var o = 0; o < fstring.length; o++) {
+            if (o % 2 == 0) {
+                fsum = fsum + parseInt(fstring[o]);
+            }
+        }
+        console.log(fstring);
+        console.log("Sum : " + fsum);
+        document.write("Sum of five numbers(" + fstring + ") : " + fsum);
+    </script>
+</head>
+
+<Body>
+
+</Body>
+
+</html>

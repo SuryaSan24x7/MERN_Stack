@@ -1,0 +1,68 @@
+Languages:
+Frontend:
+HTML
+CSS(Bootstrap)
+JS(React)
+
+Backend:
+Nodejs(Express)
+(mongoose)
+
+Database:
+Mongodb
+
+MERN Stack:
+Mongodb, Express,React,Nodejs
+
+MEAN Stack
+Mongodb, Express,Angular,Nodejs
+
+<select>
+	<option>MH</option>
+	<option selected>UP</option>
+</select>
+
+Multimedia Tags:
+Image -> img
+Audio -> audio,source
+Video -> video, source
+
+HTML entities
+https://tools.w3cub.com/html-entities
+
+&check;
+&cross;
+
+text-decoration: line-through
+________________________________________________
+Bootstrap:
+{property}{sides}-{size}
+m-5 -> margin from all sides
+mt-3 -> margin from top
+pt-3 -> Padding from top
+px-2 -> padding left and right
+
+t-> top
+b -> bottom
+x -> left and right
+y -> top and bottom
+s -> left
+e -> right
+0-5 auto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS_A2</title>
+    <script type="text/javascript">
+        //1.Write a program to find given number is even or odd.
+        
+        var n1 = prompt("Enter number")
+        console.log(n1)
+        if (parseInt(n1) % 2 == 0) {
+            document.write("Number is Even")
+        }
+        else {
+            document.write("Number is Odd<br>")
+        }
+        //2.Write a program to find the greater number out of three numbers.
+        var g1 = prompt("Enter number 1")
+        var g2 = prompt("Enter number 2")
+        var g3 = prompt("Enter number 3")
+        console.log(g1)
+        console.log(g2)
+        console.log(g3)
+        if (parseInt(g1) > parseInt(g2) && parseInt(g1) > parseInt(g3)) {
+            document.write("G1 is greater<br>")
+        }
+        else if (parseInt(g2) > parseInt(g1) && parseInt(g2) > parseInt(g3)) {
+            document.write("G2 is greater<br>")
+        }
+        else {
+            document.write("G3 is greater<br>")
+
+        }
+        //3.Write a program to find the print the day of week.
+        var i = prompt("enter code for day of the week")
+        console.log(i)
+        if (i == 1) {
+            document.write("Sunday")
+        }
+        else if (i == 2) {
+            document.write("Monday")
+        }
+        else if (i == 3) {
+            document.write("Tuesday")
+        }
+        else if (i == 4) {
+            document.write("Wednesday")
+        }
+        else if (i == 5) {
+            document.write("Thursday")
+        }
+        else if (i == 6) {
+            document.write("Friday")
+        }
+        else if (i == 7) {
+            document.write("Saturday")
+        }
+        else {
+            document.write("Error")
+
+        } 
+        //4.Implement a calculator using if-else ladder
+        var num = prompt("enter number")
+        var num2 = prompt("enter number")
+        var o = prompt("enter operator(+,-,*,/,%)")
+        console.log(num)
+        console.log(num2)
+        console.log(o)
+        if (o == "+") {
+            var add = parseInt(num) + parseInt(num2);
+            document.write("<br>Result :"+num+" "+o+""+num2+"="+add)
+        }
+        else if (o == "-") {
+            var sub = parseInt(num) - parseInt(num2);
+            document.write("<br>Result :"+num+" "+o+""+num2+"="+sub)
+        }
+        else if (o == "*") {
+            var mul = parseInt(num) * parseInt(num2);
+            document.write("<br>Result :"+num+" "+o+""+num2+"="+mul)
+        }
+        else if (o == "/") { 
+            var div = parseInt(num) / parseInt(num2);
+            document.write("<br>Result :"+num+" "+o+""+num2+"="+div) }
+        else if (o == "%") { 
+            var mod = parseInt(num) % parseInt(num2);
+            document.write("<br>Result :"+num+" "+o+""+num2+"="+mod) }
+        else{
+            document.write("Error")
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

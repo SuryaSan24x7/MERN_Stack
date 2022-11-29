@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Scopes</title>
+	<script type="text/javascript">
+		//var,let,const
+		//Global scope variable
+		var a = 100
+		let b = 200
+		const c = 300
+
+		function func(){
+			//Function scope : var let const follows function scope
+			var x= 200
+			let y = 300
+			const z = 400
+			if(true){
+				var m = 200
+				let n = 300 //follows the block scope
+				const p = 400 // follows the block scope
+			}
+			console.log("Outside block m= ", m)
+			//console.log("Outside block n= ", n)
+			//console.log("Outside block p= ", p)
+
+
+		}
+
+		//console.log("Outside function x =", x)
+		//console.log("Outside function y =", y)
+		//console.log("Outside function z =", z)
+
+		func()
+	</script>
+</head>
+<body>
+
+</body>
+</html>

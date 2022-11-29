@@ -1,0 +1,48 @@
+<!-- 5.Write JS code to take movie details from user and print in table
+Movie details : Movie Name, Price, TheatreName  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movie_Ticket</title>
+    <script>
+        
+        var movieDetails =[];
+function Movie_details_save(){
+            var m = document.getElementById("Movie_Name").value;
+            var p = document.getElementById("Ticket_Price").value;
+            var t = document.getElementById("Theater_Name").value;
+            var s = document.getElementById("Screen_Number").value;
+
+            var movieObj = {
+                movie:m,
+                price:p,
+                theatre:t,
+                screen:s
+            }
+            movieDetails.push(movieObj)
+        }
+function display(){
+        var htmlStr = "<table border=1><tr><th>Movie_Name</th><th>Price</th><th>Theatre_Name</th><th>Screen_Number</th></tr>"
+        
+        for(var i=0;i<movieDetails.length;i++){
+            htmlStr = htmlStr + "<tr><td>" + movieDetails[i].movie + "</td><td>" + movieDetails[i].price + "&#8377;</td><td>" +movieDetails[i].theatre + "</td><td>" +movieDetails[i].screen + "</td></tr>"
+        }
+
+        htmlStr = htmlStr + "</table>"
+        document.getElementById("dis").innerHTML = htmlStr;
+    }
+
+</script>
+</head>
+<body>
+    <span>Movie Details</span>
+    <input type="text" id="Movie_Name" placeholder="Movie_Name">
+    <input type="text" id="Ticket_Price" placeholder="Ticket_Price">
+    <input type="text" id="Theater_Name" placeholder="Theater_Name">
+    <input type="text" id="Screen_Number" placeholder="Screen_Number">
+    <button onclick="Movie_details_save()">Save</button>
+    <button onclick="display()">Display</button>
+    <span id="dis"></span>
+    
+</body>
+</html>

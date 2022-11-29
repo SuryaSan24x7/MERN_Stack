@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>Demo2</title></head>
+<body>
+<table>
+<tr><th>Name</th><th>Mob_no</th>
+</tr>
+<tr><td>Tim</td><td>7415141511</td>
+</tr>
+<tr><td>Damien</td><td>4151712122</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Question_1</title>
+</head>
+<body>
+
+<table cellpadding="2" width = 1024 height = 800>
+<tr>
+<th bgcolor="red">Home Page</th>
+<td><input type="text" placeholder="Last Name"></td>
+</tr>
+<tr>
+<td align="right"><b>First Name</b></td>
+<td><input type="text" placeholder="First Name"></td>
+</tr>
+<tr>
+<td align="right"><b>Address</b></td>
+<td><input type="textarea" rows=20 cols=60>
+</tr>
+</table>
+</body>
+</html>

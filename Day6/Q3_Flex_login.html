@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex_Login</title>
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+
+        .container {
+            /* border: 1px solid black; */
+            height: 98vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .blk{
+            text-align: center;
+            padding: 50px;
+            background-color: white;
+            /* border: 1px solid blue; */
+        }
+        .i-c{
+            border: 0px;
+            background-color: whitesmoke;
+            padding: 16px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+    
+        .btn{
+            border: 0px;
+            padding: 20px;
+            background-color: lightgreen;
+            color: white;
+
+        }
+        #reg{
+            color: gray;
+        }
+        #acc{
+            color: lightgreen;
+        }
+        .title{
+            font-style: italic,bold;
+            font-size: 40px;
+        }
+        #info{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<Body>
+    <div class="container">
+        <div class="blk">
+            <p class="title">Login</p>
+            <input type="text" class="i-c" placeholder="Username">
+            <br>
+            <input type="password" class="i-c" placeholder="Password">
+            <br>
+            <button class="btn">Login</button>
+            <div id="info">
+                <span id="reg"> Not registered? </span><span id="acc">Create New Account</span>
+            </div>
+        </div>
+    </div>
+</Body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <script type="text/javascript">
+        /*
+1.Write a code to print fibonnaci series( 1,1,2,3,5,8,13,21...) till 100.
+2.Write a code to check the given string is palindrome or not. (abba)
+3.Write a code to take string input from user and remove duplicate words.
+4.Write a code which accepts a sequence of comma seperated five numbers and find the addition of all of them
+*/ function fib() {
+            document.write(" <br>Fibonnaci Series<br>");
+            var a = 0, b = 1, next;
+            for (var i = 1; i <= 15; i++) {
+                if (a >= 100) {
+                    break;
+                }
+                else {
+                    console.log(a);
+                    document.write(a + " ");
+                    next = a + b;
+                    a = b;
+                    b = next;
+                }
+
+            }
+        }
+
+        document.write("<br>");
+
+        function palindrome() {
+            document.write(" <br>palindrome or not<br>");
+            var pal = prompt("Enter String for palindrome :");
+            var k = pal.split("");
+            var re = k.reverse();
+
+            if (k.toString == re.toString) {
+                document.write("This is a palindrome :" + pal);
+            }
+            else {
+                document.write("This is not palindrome");
+            }
+        }
+        function dup() {
+            document.write(" <br>string input from user and remove duplicate words<br>");
+            var input = prompt("enter a string ");
+            var ai = input.split(" ");
+            var y = [];
+            for (var t = 0; t < ai.length; t++) 
+            {
+                var flag = 0;
+                for (var tt = t + 1; tt < ai.length; tt++) 
+                {
+                    if (ai[t] == ai[tt]) {
+                        flag = 1;
+                    }
+                }
+                if (flag == 0) { y.push(ai[t]) }
+            }
+            console.log(ai);
+            console.log(y);
+            document.write(y);
+        }
+        function five(){
+            fstring=prompt("enter a sequence of comma seperated five numbers");
+            var fsum = 0 ;
+            for(var o=0;o<fstring.length;o++)
+            {
+                if(o%2 == 0){
+                    fsum = fsum + parseInt(fstring[o]);
+                }
+            }
+            console.log(fstring);
+            console.log("Sum : "+fsum);
+            document.write("Sum of five numbers("+fstring+") : "+fsum);
+        }
+
+        fib();
+        palindrome();
+        dup();
+        five();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Question_2
+</title>
+<style>
+body
+{
+background-color : teal;
+}
+#one{
+color : white;
+text-align : center;
+font-size : 45px;
+padding-top : 15px;
+padding-bottom : 15px;
+margin-top : 300px;
+margin-left : 430px;
+margin-right : 430px
+
+}
+.info{
+color : white;
+font-size : 20px;
+text-align : center;
+}
+.b{
+margin-left : 620px;
+color : Teal;
+padding : 10px;
+margin-left : 920px;
+border-radius : 5px;
+}
+</style>
+</head>
+<body>
+<p id="one">BEM KIT</p>
+<p class="info">CSS using BEM in class naming Standards</p>
+<button class="b">Submit</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- 4.Write a program to add 5 fruit names to the array and show in list-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Fruits_DOM
+    </title>
+    <script>
+        var arr = [];
+       
+        function input() {
+            arr.push(document.getElementById("name").value);
+        }
+        function display(){
+        var fstr = "<ol>"
+        for (var i = 0; i < arr.length; i++) {
+            fstr = fstr + "<li>" + arr[i] + "</li>"
+        }
+        fstr = fstr + "</ol>";
+        console.log(fstr);
+        document.getElementById("List").innerHTML = fstr;
+    }
+    </script>
+</head>
+
+<body>
+    <h1> Fruit List : </h1>
+    <div id="fl"> </div>
+    <input type="text" id="name" placeholder="Fruit_Name">
+    <button onclick="input()">Save</button>
+	<button onclick="display()">Display</button>
+    <div id="List"></div>
+</body>
+
+</html>
